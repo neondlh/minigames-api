@@ -1,0 +1,12 @@
+{
+      "id": "2",
+      "type": "QUIZ",
+      "description": "description",
+      "alternatives": {
+        "D": "alternative D",
+        "A": "alternative A",
+        "B": "alternative B",
+        "C": "alternative C"
+      },
+      "correctAnswer": "C"
+}

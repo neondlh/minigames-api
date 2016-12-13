@@ -1,0 +1,38 @@
+[
+	{
+	      "id": "1",
+	      "type": "General",
+	      "description": "description",
+	      "alternatives": {
+	        "D": "alternative D",
+	        "A": "alternative A",
+	        "B": "alternative B",
+	        "C": "alternative C"
+	      },
+	      "correctAnswer": "C"
+	},
+	{
+	      "id": "2",
+	      "type": "Math",
+	      "description": "description",
+	      "alternatives": {
+	        "D": "alternative D",
+	        "A": "alternative A",
+	        "B": "alternative B",
+	        "C": "alternative C"
+	      },
+	      "correctAnswer": "D"
+	},
+	{
+	      "id": "3",
+	      "type": "Movies",
+	      "description": "description",
+	      "alternatives": {
+	        "D": "alternative D",
+	        "A": "alternative A",
+	        "B": "alternative B",
+	        "C": "alternative C"
+	      },
+	      "correctAnswer": "A"
+	}
+]

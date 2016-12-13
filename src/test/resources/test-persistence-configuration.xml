@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/data/mongo
+    http://www.springframework.org/schema/data/mongo/spring-mongo.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="fongo" class="com.github.fakemongo.Fongo">
+		<constructor-arg value="InMemoryMongo" />
+	</bean>
+	<bean id="mongo" factory-bean="fongo" factory-method="getMongo" />
+
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongo" ref="mongo" />
+		<constructor-arg name="databaseName" value="minigames-test" />
+	</bean>
+
+	<context:component-scan base-package="com.minigame.api.model" />
+	
+	<bean id="persistenceManager" class="com.minigame.api.persistence.MongoPersistenceManager">
+    	<property name="mongoTemplate" ref="mongoTemplate"/>
+    </bean>
+	
+</beans>

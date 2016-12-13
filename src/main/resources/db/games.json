@@ -1,0 +1,26 @@
+[
+	{
+	  "id" : 1111111111111111111,
+	  "gameType": "QUIZ",
+	  "playerNames": [
+	    "feñita",
+	    "pablito"
+	  ],
+	  "scores": {
+	    "feñita": 0,
+	    "pablito": 0
+	  }
+	},
+	{
+	  "id" : 1111111111111111112,
+	  "gameType": "RACE",
+	  "playerNames": [
+	    "feñita",
+	    "pablito"
+	  ],
+	  "scores": {
+	    "feñita": 0,
+	    "pablito": 0
+	  }
+	 } 
+ ]
